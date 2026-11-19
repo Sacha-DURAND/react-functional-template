@@ -1,0 +1,21 @@
+.not-found {
+  max-width: 600px;
+  margin: auto;
+  padding: 48px 24px;
+  text-align: center;
+}
+
+.not-found h1 {
+  margin: 8px 0 12px;
+}
+
+.not-found p {
+  margin-bottom: 20px;
+}
+
+.not-found a {
+  display: inline-block;
+  padding: 8px 16px;
+  border: 1px solid currentColor;
+  border-radius: 6px;
+}

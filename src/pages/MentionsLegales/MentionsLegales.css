@@ -1,0 +1,17 @@
+.legal-page {
+  max-width: 820px;
+  margin: 0 auto;
+  padding: 40px 24px;
+}
+
+.legal-page h1 {
+  margin-bottom: 24px;
+}
+
+.legal-page section {
+  margin-bottom: 24px;
+}
+
+.legal-page h2 {
+  margin-bottom: 8px;
+}
