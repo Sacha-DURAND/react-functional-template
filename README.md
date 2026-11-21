@@ -24,35 +24,58 @@ Développé par **Studio 111**, ce template fournit une base simple et fonctionn
 ## Structure du projet
 
 ```text
-src/
-├── assets/                  # Ressources statiques (images, icônes...)
+React_Functional_Template/
 │
-├── components/              # Composants réutilisables
-│   ├── Footer/
-│   │   ├── Footer.css
-│   │   └── Footer.jsx
-│   └── Header/
-│       ├── Header.css
-│       └── Header.jsx
+├── public/                         # Fichiers statiques accessibles directement
+│                                   # depuis la racine du site (favicon, etc.)
 │
-├── pages/                   # Pages de l'application
-│   ├── Home/
-│   │   ├── Home.css
-│   │   └── Home.jsx
-│   ├── MentionsLegales/
-│   │   └── MentionsLegales.jsx
-│   └── NotFound/
-│       └── NotFound.jsx
+├── src/                            # Code source principal de l'application
+│   │
+│   ├── assets/                     # Ressources utilisées dans le projet :
+│   │                               # images, icônes, polices, illustrations...
+│   │
+│   ├── components/                 # Composants React réutilisables
+│   │   │
+│   │   ├── Footer/                 # Pied de page commun à l'application
+│   │   │   ├── Footer.css          # Styles du composant Footer
+│   │   │   └── Footer.jsx          # Structure et contenu du Footer
+│   │   │
+│   │   └── Header/                 # En-tête et navigation principale
+│   │       ├── Header.css          # Styles du composant Header
+│   │       └── Header.jsx          # Structure et contenu du Header
+│   │
+│   ├── pages/                      # Pages principales de l'application
+│   │   │
+│   │   ├── Home/                   # Page d'accueil
+│   │   │   ├── Home.css            # Styles de la page d'accueil
+│   │   │   └── Home.jsx            # Contenu de la page d'accueil
+│   │   │
+│   │   ├── MentionsLegales/        # Page des mentions légales
+│   │   │   ├── MentionsLegales.css # Styles de la page
+│   │   │   └── MentionsLegales.jsx # Contenu des mentions légales
+│   │   │
+│   │   └── NotFound/               # Page affichée lorsqu'une route
+│   │       ├── NotFound.css        # demandée n'existe pas
+│   │       └── NotFound.jsx        # Styles et contenu de la page 404
+│   │
+│   ├── utils/                      # Composants et fonctionnalités utilitaires
+│   │   ├── ScrollToTop.jsx         # Remonte automatiquement en haut
+│   │   │                           # de la page lors d'un changement de route
+│   │   └── StudioFooter.jsx        # Signature / crédit Studio 111
+│   │
+│   ├── App.css                     # Styles du composant principal App
+│   ├── App.jsx                     # Composant racine de l'application
+│   ├── index.css                   # Styles globaux et variables CSS
+│   ├── main.jsx                    # Point d'entrée React : montage de l'application
+│   └── Routeur.jsx                 # Configuration de la navigation et des routes
 │
-├── utils/                   # Composants utilitaires
-│   ├── ScrollToTop.jsx
-│   └── StudioFooter.jsx
-│
-├── App.css
-├── App.jsx
-├── index.css                # Styles globaux et variables CSS
-├── main.jsx                 # Point d'entrée de l'application
-└── Routeur.jsx              # Configuration des routes
+├── .gitignore                      # Fichiers et dossiers exclus du suivi Git
+├── .oxlintrc.json                  # Configuration de l'outil Oxlint
+├── index.html                      # Page HTML principale chargée par Vite
+├── package.json                    # Dépendances, métadonnées et scripts npm
+├── package-lock.json               # Verrouillage des versions des dépendances
+├── README.md                       # Documentation et présentation du projet
+└── vite.config.js                  # Configuration de Vite
 ```
 
 ## Installation et utilisation
